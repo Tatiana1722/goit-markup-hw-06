@@ -368,10 +368,10 @@
             </button>
             <form action="" class="form">
              <div class="modal_caption">Залиште свої дані, ми вам передзвонимо</div>
-             <div class="modal-data">
+             <div class="modal-data tyu">
                <label for="name" class="modal-label">Ім'я</label>
                 <div class="sy">
-                 <input type="text" name="name" id="name" class="modal-input">
+                 <input class="modal-input" type="text" name="name" id="name">
                  <svg class="icon_man" width="12px" height="12px">
                    <use href="./images/symbol-defs.svg#icon_man"></use>
                  </svg>
@@ -379,23 +379,36 @@
              </div>
              <div class="modal-data">
                <label for="tel" class="modal-label">Телефон</label>
-               <input type="tel" name="tel" id="tel" class="modal-input">
+               <div class="sy">
+                 <input class="modal-input" type="tel" name="tel" id="tel">
+                 <svg class="icon_man" width="13px" height="13px">
+                   <use href="./images/symbol-defs.svg#telephone"></use>
+                 </svg>
+               </div>
              </div>
              <div class="modal-data">
                <label for="mail" class="modal-label">Пошта</label>
-               <input type="email" name="mail" id="mail" class="modal-input">
+               <div class="sy">
+                 <input class="modal-input" type="email" name="mail" id="mail">
+                 <svg class="icon_man" width="15px" height="12px">
+                   <use href="./images/symbol-defs.svg#modal_mail"></use>
+                 </svg>
+               </div>
              </div>
              <div class="modal-data">
-               <label for="comments" class="modal-label">Коментар</label>
-               <textarea name="" id="comments" cols="30" rows="10" placeholder="Введіть текст" class="modal-input coments"></textarea>
+               <label for="comments" class="modal-label comments">Коментар</label>
+               <textarea class="modal-input coments" name="" id="comments" cols="30" rows="10" placeholder="Введіть текст" ></textarea>
              </div>
             
-             <div class="modal-data">
-               <input type="checkbox" class="modal-label">
-               <label for="">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>
+             <div class="modal-data check">
+               <label class="field">
+                 <input class="checkbox" type="checkbox">
+                 <span class="icon_check"></span>
+                 <p class="check_caption">Погоджуюся з розсилкою та приймаю <a href="" class="contract">Умови договору</a></p>
+               </label>
              </div>
 
-             <button type="che" class="submit">Відправити
+             <button type="che" class="submit send">Відправити
              </button>
 
             </form>
@@ -470,7 +483,7 @@
           <form action="">
             <div class="mailinag-list-input">
              <label for="mail"></label>
-             <input type="email" name="mail" id="mail" placeholder="E-mail">
+             <input class="mail_input" type="email" name="mail" id="mail" placeholder="E-mail">
              
              <button type="submit" class="submit">Підписатися
               <svg class="icon_send" width="20px" height="20px">
