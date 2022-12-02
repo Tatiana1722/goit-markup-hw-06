@@ -755,6 +755,8 @@ margin: 0px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: inherit;
+
+    color: var(--main-background-color);
 }
 
 .mailinag-list-input::placeholder {
@@ -783,13 +785,15 @@ margin: 0px;
 
 .submit {
     margin-left: 12px;
+    cursor: pointer;
 }
 
 .submit.send {
-
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.submit.send:focus {
+.submit.send:focus, .submit.send:hover {
     background-color: #188CE8;
+
 }
 
 
@@ -902,8 +906,6 @@ margin: 0px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
-    cursor: pointer;
-
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input.coments {
@@ -945,13 +947,13 @@ margin: 0px;
 .checkbox {
     position: absolute;
 
-    left: 0px;
-    top: 0;
-
-    width: 16px;
-    height: 15px;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
     border: 0;
     padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -981,8 +983,13 @@ margin: 0px;
    transform: translateX(-50%);
     margin: 0;
 
+
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contract {
     color: var(--accent-color);
+}
+.check_caption {
+
+ letter-spacing: 0.03em;
 }
